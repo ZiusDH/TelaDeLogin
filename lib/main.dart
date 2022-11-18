@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
       title: 'Kamamy',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.lightBlue,
+        primarySwatch: Colors.lightGreen,
       ),
       home: LoginPage(),
     );
