@@ -10,13 +10,13 @@ class LoginPage extends StatelessWidget {
           left: 40,
           right: 40,
         ),
-        color: Colors.lightBlueAccent,
+        color: Color(0xFF54FEFD),
         child: ListView(
           children: [
             SizedBox(
               width: 128,
               height: 128,
-              child: Image.asset("assets/logo.png"),
+              child: Image.asset("assets/images/logo.png"),
             ),
             SizedBox(
               height: 50,
@@ -58,10 +58,31 @@ class LoginPage extends StatelessWidget {
             Container(
               height: 40,
               alignment: Alignment.centerRight,
-              child: FlatButton(
-                child: Text(
-                  "Recuperar Senha",
-                  textAlign: TextAlign.right,
+              child: TextButton(
+                  child: Text(
+                    "Recuperar Senha",
+                    textAlign: TextAlign.right,
+                  ),
+                  onPressed: () {}),
+            ),
+            SizedBox(
+              height: 40,
+            ),
+            Container(
+              height: 60,
+              alignment: Alignment.centerLeft,
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  stops: [0.3, 1],
+                  colors: [
+                    Color(0xFF48FEFE),
+                    Color(0xFFFE7504),
+                  ],
+                ),
+                borderRadius: BorderRadius.all(
+                  Radius.circular(5),
                 ),
               ),
             ),
