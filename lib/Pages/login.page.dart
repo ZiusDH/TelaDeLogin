@@ -62,6 +62,10 @@ class LoginPage extends StatelessWidget {
                   child: Text(
                     "Recuperar Senha",
                     textAlign: TextAlign.right,
+                    style: TextStyle(
+                      fontSize: 15,
+                      fontWeight: FontWeight.w200,
+                    ),
                   ),
                   onPressed: () {}),
             ),
@@ -70,19 +74,46 @@ class LoginPage extends StatelessWidget {
             ),
             Container(
               height: 60,
-              alignment: Alignment.centerLeft,
+              width: 30,
+              alignment: Alignment.center,
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
                   stops: [0.3, 1],
                   colors: [
-                    Color(0xFF48FEFE),
+                    Color.fromARGB(255, 254, 175, 72),
                     Color(0xFFFE7504),
                   ],
                 ),
                 borderRadius: BorderRadius.all(
                   Radius.circular(5),
+                ),
+              ),
+              child: SizedBox.expand(
+                child: TextButton(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Text(
+                        "Entrar",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          fontSize: 20,
+                        ),
+                        textAlign: TextAlign.left,
+                      ),
+                      Container(
+                        child: SizedBox(
+                          child: Image.asset("assets/image/icone.png"),
+                          height: 28,
+                          width: 28,
+                        ),
+                      ),
+                    ],
+                  ),
+                  onPressed: () => {},
                 ),
               ),
             ),
